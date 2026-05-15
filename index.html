@@ -1,0 +1,713 @@
+<!-- 2026-05-16 02:30:41;來自厲害的Chatgpt V51 -->
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>日本觀光列車｜旅印帖 v51</title>
+<meta name="theme-color" content="#EEF5FB">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="旅印帖">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="512x512" href="./tourist-train-rabbit-icon-v51-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./tourist-train-rabbit-icon-v51-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="shortcut icon" type="image/png" href="./tourist-train-rabbit-icon-v51-512.png">
+<style>
+:root {
+  --bg:#F7F9FB; --card:#FFFFFF; --ink:#243044; --muted:#6B7280; --line:#E5E7EB;
+  --accent:#8EA6C8; --ok:#4F9D69; --shadow:0 12px 30px rgba(36,48,68,.10);
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#EEF5FB 0,#F7F9FB 220px);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif;}
+button,input,select{font:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:18px 14px 72px}
+.hero{background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);border-radius:28px;padding:18px;position:sticky;top:0;z-index:5;backdrop-filter:blur(16px)}
+.titlebar{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.titleMain{display:flex;align-items:flex-start;gap:14px;min-width:0}
+.titleText{min-width:0}
+.titleSep{color:#3F7F78}
+.appIcon{width:82px;height:82px;flex:0 0 auto;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(36,48,68,.10))}
+h1{font-size:clamp(24px,5vw,40px);line-height:1.06;margin:0;font-weight:950;letter-spacing:.02em}
+.versionBadge{font-size:.36em;line-height:1;color:#7E95A8;font-weight:1000;margin-left:8px;vertical-align:baseline;white-space:nowrap;border:0;background:transparent;padding:2px 6px;border-radius:999px;cursor:pointer}
+.versionBadge:hover,.versionBadge:focus{background:#EEF5FB;outline:2px solid transparent}
+.sub{color:var(--muted);font-size:13px;font-weight:800;margin-top:8px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.pill{padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:12px;font-weight:900;color:#44546A}
+.progressBox{margin-top:16px;display:grid;gap:10px}
+.progressTop{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.bigPct{font-size:38px;font-weight:1000;color:#45637F;line-height:1}
+.doneInline{font-size:13px;color:var(--muted);font-weight:900;padding-bottom:4px}
+.bar{height:16px;background:#E8EDF4;border-radius:999px;overflow:hidden;border:1px solid #D8E1EC}
+.fill{height:100%;width:0;background:linear-gradient(90deg,#8EA6C8,#B9D7C3);border-radius:999px;transition:width .2s}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:9px 10px;box-shadow:0 4px 14px rgba(36,48,68,.045);min-width:0}
+.stat b{display:block;font-size:19px;line-height:1.05} .stat span{font-size:11px;color:var(--muted);font-weight:900;white-space:nowrap}.statAction{cursor:pointer;text-align:left;color:#45637F;font:inherit}.statAction:hover,.statAction:focus{background:#F6FAFD;outline:2px solid transparent;border-color:#8EA6C8}.statAction b{color:#45637F}
+.panelGroup{display:grid;gap:10px;margin-top:14px}
+.panelBox{background:#fff;border:1px solid #D9E1EA;border-radius:20px;padding:10px;box-shadow:none}
+.controls{margin-top:0;display:grid;grid-template-columns:1.2fr .8fr .7fr .7fr;gap:10px}
+.search,.select{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 13px;font-weight:800;color:#334155;min-width:0}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:0}
+.btn{border:1px solid #8EA6C8;background:#fff;color:#45637F;border-radius:999px;padding:10px 13px;font-weight:900;cursor:pointer;box-shadow:none}
+.btn.ghost{background:#fff;color:#45637F;border:1px solid #8EA6C8;box-shadow:none}
+.btn.danger{background:#fff;color:#9B4A4A;border:2px solid #B85C5C;box-shadow:none}
+.btn:hover,.btn:focus{background:#F6FAFD;outline:2px solid transparent}
+.companyTabs{display:flex;gap:8px;overflow:auto;padding:14px 2px 4px;margin:4px 0 8px;scrollbar-width:thin}
+.tab{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font-weight:950;color:#43536A;cursor:pointer}
+.tab.active{background:#243044;color:white;border-color:#243044}
+.groupTitle{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:22px 4px 10px}
+.groupTitle h2{font-size:20px;margin:0;font-weight:1000}
+.groupTitle small{color:var(--muted);font-weight:900}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:13px;box-shadow:0 8px 20px rgba(36,48,68,.06);display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.card.done{background:#F2FAF4;border-color:#BEE5C9}
+.check{width:28px;height:28px;border-radius:9px;border:2px solid #B9C5D3;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:1000;cursor:pointer;user-select:none}
+.card.done .check{background:#4F9D69;color:#fff;border-color:#4F9D69}
+.name{font-size:15px;font-weight:1000;line-height:1.25}
+.nameBtn{display:inline;text-align:left;border:0;background:transparent;padding:0;color:inherit;cursor:pointer;border-radius:8px}
+.nameBtn:active{background:#E8EDF4}
+.nameHint{font-size:11px;color:#94A3B8;font-weight:900;margin-top:3px}
+.nameSub{font-size:12px;color:#64748B;font-weight:900;margin-top:3px;line-height:1.35;word-break:break-word}
+.meta{display:flex;gap:6px;flex-wrap:wrap;margin:7px 0}
+.tag{font-size:11px;border:1px solid #D9E1EA;background:#F8FAFC;color:#475569;border-radius:999px;padding:4px 7px;font-weight:900}
+.companyTag{background:#EEF5FB;color:#334E68}
+
+.statusRow{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 2px}
+.statusTag{font-size:11px;border:1px solid #C8D5E4;background:#F6FAFD;color:#45637F;border-radius:999px;padding:4px 7px;font-weight:1000}
+.statusTag.warn{border-color:#E1B45F;background:#FFF8E8;color:#8A5A12}
+.statusTag.danger{border-color:#D08989;background:#FFF1F1;color:#A13D3D}
+.statusNote{font-size:12px;line-height:1.55;font-weight:900;color:#5B6472;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:7px 9px;margin:6px 0 2px}
+.statusNote.warn{background:#FFF8E8;border-color:#F0D48F;color:#79510E}
+.statusNote.danger{background:#FFF1F1;border-color:#E6B3B3;color:#8F3636}
+.fields{display:grid;grid-template-columns:105px 1fr;gap:7px;margin-top:8px}
+.fields input,.fields select{border:1px solid var(--line);border-radius:12px;padding:8px;background:#fff;font-size:12px;font-weight:800;min-width:0}
+.note{grid-column:1/-1}
+.sourceLink{font-size:11px;color:#6B7280;text-decoration:none;font-weight:900}
+.linkRow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.officialBtn{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:6px 9px;background:#243044;color:#fff;text-decoration:none;font-size:11px;font-weight:1000}
+.officialBtn.company{background:#45637F}
+.officialMissing{font-size:11px;color:#94A3B8;font-weight:900;border:1px dashed #CBD5E1;border-radius:999px;padding:5px 8px;background:#F8FAFC}
+.editOfficialBtn{border:1px solid #CBD5E1;background:#fff;color:#334155;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:1000;cursor:pointer}
+.officialBtn.custom{background:#6B5B95}
+.updateModal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(15,23,42,.45);z-index:22;padding:18px}
+.updateModal.show{display:flex}
+.updateBox{width:min(520px,100%);max-height:min(84vh,760px);overflow:hidden;background:#fff;border-radius:24px;padding:18px;box-shadow:0 20px 60px rgba(15,23,42,.28);border:1px solid rgba(255,255,255,.75)}
+.updateHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.updateHead h2{font-size:20px;margin:0;font-weight:1000}
+.updateClose{border:0;background:#F1F5F9;color:#334155;border-radius:999px;width:34px;height:34px;font-size:20px;font-weight:1000;cursor:pointer;line-height:1;flex:0 0 auto}
+.updateIntro{font-size:13px;color:#64748B;font-weight:900;margin:6px 0 12px;line-height:1.55}
+.updateList{position:relative;display:grid;gap:10px;margin:0 0 14px;padding:2px 0 2px 18px;list-style:none;max-height:55vh;overflow:auto;overscroll-behavior:contain}
+.updateList::before{content:"";position:absolute;left:6px;top:8px;bottom:10px;width:2px;background:#D8E1EC;border-radius:99px}
+.updateList li{position:relative;border:1px solid var(--line);background:#F8FAFC;border-radius:14px;padding:9px 10px;font-size:13px;font-weight:900;line-height:1.45;color:#334155}
+.updateList li::before{content:"";position:absolute;left:-17px;top:15px;width:9px;height:9px;border-radius:999px;background:#8EA6C8;border:2px solid #fff;box-shadow:0 0 0 1px #8EA6C8}
+.updateList li.latest{border-color:#B8DCC6;background:#F3FBF6}
+.updateList li.latest::before{background:#4F9D69;box-shadow:0 0 0 1px #4F9D69}
+.updateTime{font-size:12px;color:#45637F;font-weight:1000;margin-bottom:2px}.updateText b{color:#243044}
+.updateSmall{font-size:12px;color:#64748B;font-weight:900;line-height:1.6;margin-top:10px}
+.zhModal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(15,23,42,.45);z-index:20;padding:18px}
+.zhModal.show{display:flex}
+.zhBox{width:min(420px,100%);background:#fff;border-radius:24px;padding:18px;box-shadow:0 20px 60px rgba(15,23,42,.28);border:1px solid rgba(255,255,255,.75)}
+.zhBox h2{font-size:20px;margin:0 0 6px;font-weight:1000}
+.zhTrain{font-size:13px;color:#64748B;font-weight:900;margin-bottom:12px;word-break:break-word}
+.zhBox label{font-size:13px;font-weight:950;color:#334155;display:block;margin-bottom:6px}
+.zhBox input{width:100%;border:1px solid var(--line);border-radius:16px;padding:13px 14px;font-size:16px;font-weight:900}
+.zhBtns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px}
+.zhBtns .btn{box-shadow:none}
+.empty{display:none;text-align:center;color:#6B7280;background:#fff;border:1px dashed #CBD5E1;border-radius:22px;padding:28px;font-weight:900;margin-top:18px}
+.footer{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px;color:#4B5563;font-size:13px;line-height:1.7}
+.footer b{color:#243044}
+.fileInput{display:none}
+@media(max-width:860px){
+  html,body{width:100%;overflow-x:hidden}
+  .wrap{padding:14px 10px 64px}
+  .hero{position:relative;top:auto;z-index:1;border-radius:0 0 24px 24px;margin:-14px -10px 0;padding:16px 10px;max-height:none;overflow:visible;backdrop-filter:none}
+  .titlebar{display:block}
+  .pills{gap:6px}
+  .pill{font-size:11px;padding:6px 8px}
+  .progressBox{gap:8px}
+  .progressTop{gap:8px;align-items:flex-end}
+  .bigPct{font-size:32px}
+  .doneInline{font-size:12px;padding-bottom:3px}
+  .stats{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .stat{padding:8px 6px;border-radius:14px}
+  .stat b{font-size:16px}
+  .stat span{font-size:10px}.statAction{text-align:center}
+  .panelGroup{gap:8px;margin-top:12px}
+  .panelBox{padding:8px;border-radius:16px}
+  .controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .search,.select{width:100%;min-height:46px;font-size:16px;border-radius:14px}
+  .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+  .actions .btn{width:100%;min-height:44px;border-radius:14px;padding:10px 8px;font-size:14px;line-height:1.2}
+  .actions .btn.danger{grid-column:1/-1}
+  .btn{width:100%;min-height:44px;border-radius:14px}
+  .companyTabs{margin:8px -2px 8px;padding:12px 2px 6px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .grid{grid-template-columns:1fr}
+  .card{grid-template-columns:34px minmax(0,1fr);border-radius:18px;padding:12px;gap:8px}
+  .fields{grid-template-columns:1fr;gap:6px}
+  .fields input,.fields select{font-size:16px;min-height:42px}
+  .note{grid-column:auto}
+  .groupTitle{align-items:flex-start;margin:18px 2px 8px}
+  .groupTitle h2{font-size:18px;line-height:1.25}
+  .updateModal,.zhModal{align-items:flex-end;padding:10px}
+  .zhBox{border-radius:22px 22px 18px 18px;padding:16px}
+  .zhBtns{grid-template-columns:1fr;gap:8px}
+}
+
+.nameJp,.nameZh,.screenParen{display:inline}
+@media print{
+  .nameBtn .nameJp{display:block}
+  .nameBtn .screenParen{display:none}
+  .nameBtn .nameZh{display:block;font-size:12px;font-weight:900;color:#333;margin-top:2px}
+  .printTrainName{display:block;line-height:1.35}
+  .printJpName{display:block;font-weight:950}
+  .printZhName{display:block;font-size:10.5px;font-weight:800;color:#333;margin-top:2px}
+}
+
+ .printOnly{display:none}
+@media print{
+  .hero,.companyTabs,.actions,.fields .note,.footer .noPrint,.zhModal,.updateModal{display:none!important}
+  body{background:white}
+  .wrap{padding:0}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .card{break-inside:avoid;box-shadow:none;border-color:#999}
+  .check{border-color:#111}
+  a{color:#111;text-decoration:none}
+  body.print-completed .wrap{display:none!important}
+  body.print-completed #printPanel{display:block!important;padding:0 4mm;color:#111;font-family:system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif}
+  body.print-completed .printTitle{font-size:22px;font-weight:950;margin:0 0 4px}
+  body.print-completed .printMeta{font-size:12px;color:#444;margin-bottom:12px}
+  body.print-completed .printCompany{break-inside:avoid;margin:12px 0 6px;font-size:16px;font-weight:950;border-bottom:1px solid #999;padding-bottom:3px}
+  body.print-completed .printTable{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:10px}
+  body.print-completed .printTable th, body.print-completed .printTable td{border:1px solid #aaa;padding:4px 5px;text-align:left;vertical-align:top}
+  body.print-completed .printTable th{background:#f2f2f2;font-weight:900}
+  body.print-completed .printSmall{font-size:10px;color:#444;word-break:break-all}
+  body.print-completed .printAlt{font-size:10px;color:#555;margin-top:2px}
+}
+</style>
+
+<meta name="theme-color" content="#8EA6C8">
+<meta name="application-name" content="日本觀光列車">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="旅印帖">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="titlebar">
+      <div>
+        <div class="titleMain">
+<div class="titleText">
+            <h1>日本觀光列車<span class="titleSep">｜</span>旅印帖<button class="versionBadge" id="versionBtn" type="button" aria-haspopup="dialog" title="查看更新紀錄">v51</button></h1>
+            <div class="sub">車窗外的日本</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progressBox">
+      <div class="progressTop"><div class="bigPct" id="pct">0%</div><div class="doneInline" id="doneText">完成 0 / 170</div></div>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="totalN">170</b><span>清單總數</span></div>
+      <div class="stat"><b id="companyN">62</b><span>公司分類</span></div>
+      <div class="stat"><b id="doneN">0</b><span>完成</span></div>
+      <button class="stat statAction" id="latestUpdateBtn" type="button" aria-haspopup="dialog" title="查看最新更新"><b>v51</b><span>最新更新</span></button>
+    </div>
+    <div class="panelGroup">
+      <section class="panelBox">
+        <div class="controls">
+          <input class="search" id="q" placeholder="搜尋列車名、中譯名、公司…">
+          <select class="select" id="companySelect"><option>全部</option></select>
+          <select class="select" id="regionSelect"><option>全部地區</option></select>
+          <select class="select" id="stateSelect">
+            <option value="all">全部列車</option><option value="done">只看完成</option><option value="notdone">只看未完成</option>
+          </select>
+        </div>
+      </section>
+      <section class="panelBox">
+        <div class="actions">
+          <button class="btn" id="exportJsonBtn">匯出 JSON 備份</button>
+          <button class="btn ghost" id="importJsonBtn">匯入 JSON 備份</button>
+          <input class="fileInput" id="file" type="file" accept=".json,application/json">
+          <button class="btn ghost" id="exportCsvBtn">匯出 CSV 表格</button>
+          <button class="btn ghost" onclick="window.print()">列印全部/目前篩選</button>
+          <button class="btn ghost" id="printDoneBtn">列印完成清單</button>
+          <button class="btn ghost" id="copyBtn">複製未完成清單</button>
+          <button class="btn danger" id="clearBtn">清空勾選</button>
+        </div>
+      </section>
+    </div>
+  </section>
+  <main id="list"></main>
+  <div class="empty" id="empty">沒有符合的列車。</div>
+
+  <section class="footer">
+    <b>口徑說明：</b>這份清單是旅行用旅印帖，不是官方統計表。依鐵路公司主分類，地區保留為標籤與篩選條件；複數公司共同運行或來源頁無法拆細的項目，會放在「JR西日本・JR東海」「東急・伊豆急行」或「其他・複數公司」。版本更新已收進右上角版本號小視窗；目前圖示已改為透明背景的大尺寸和風列車兔兔版本。<br>
+    <b>資料來源：</b>觀光列車なび各地區頁與全國頁；部分容易混淆的公司歸屬另外以鐵路公司或地方官方頁確認。訂票前仍請以鐵道公司官方公告為準。<br>
+    <span class="noPrint">小提醒：換瀏覽器或換手機不會自動同步，請用「匯出 JSON 備份」搬到新裝置；你自己補的官網、中譯名也會一起備份。CSV 只適合拿去試算表查看。</span>
+  </section>
+</div>
+<div id="printPanel" class="printOnly"></div>
+<div id="updateModal" class="updateModal" aria-hidden="true">
+  <div class="updateBox" role="dialog" aria-modal="true" aria-labelledby="updateModalTitle">
+    <div class="updateHead">
+      <div>
+        <h2 id="updateModalTitle">版本更新</h2>
+        <div class="updateIntro">從「最新更新」或標題旁版本號都能打開；主畫面維持乾淨。</div>
+      </div>
+      <button class="updateClose" id="updateCloseBtn" type="button" aria-label="關閉">×</button>
+    </div>
+    <ul class="updateList">
+      <li class="latest"><div class="updateTime">2026-05-16｜v51</div><div class="updateText"><b>PWA 版</b>：新增 manifest 與 service worker，改成可安裝到桌面的 PWA 包。</div></li>
+      <li><div class="updateTime">2026-05-16｜v50</div><div class="updateText"><b>新 favicon</b>：更換成新的「米兔觀光」兔兔列車 favicon。</div></li>
+      <li><div class="updateTime">2026-05-12｜v49</div><div class="updateText"><b>版面微調</b>：清單總數列縮短為四格，新增「最新更新」按鍵；版本更新改成時間軸式記錄；修正匯出備份檔名版本號。</div></li>
+      <li><div class="updateTime">2026-05-12｜v48</div><div class="updateText"><b>資料更新</b>：新增 Les Saveurs 志摩；西武 2028 預告列車正式改名為 Fine Dining Train「vies」；補上多筆停駛、最後年、暫停運行與新車接替備註。</div></li>
+      <li><div class="updateTime">v47</div><div class="updateText"><b>v47</b>：南海舊「天空」自清單移除，保留並更新「GRAN 天空」官方連結。</div></li>
+      <li><div class="updateTime">v46</div><div class="updateText"><b>v46</b>：功能鍵統一改為白底框線，降低畫面壓迫感。</div></li>
+      <li><div class="updateTime">v45</div><div class="updateText"><b>v45</b>：清空勾選改為白底紅色重框線，不再使用紅色底色。</div></li>
+      <li><div class="updateTime">v44</div><div class="updateText"><b>v44</b>：「列印完成」改為「列印完成清單」。</div></li>
+      <li><div class="updateTime">v43</div><div class="updateText"><b>v43</b>：標題中間的「｜」改成偏青綠。</div></li>
+      <li><div class="updateTime">v42</div><div class="updateText"><b>v42</b>：標題分隔線改成墨綠。</div></li>
+      <li><div class="updateTime">v41</div><div class="updateText"><b>v41</b>：移除富士山圖示，並將標題中間的「｜」改成暖金色點綴。</div></li><li><div class="updateTime">v40</div><div class="updateText"><b>v40</b>：在標題前加入一個小小富士山圖示，低調點綴、不佔空間。</div></li><li><div class="updateTime">v39</div><div class="updateText"><b>v39</b>：取消畫面標題前方的圖示，讓標題區更簡潔。</div></li><li><div class="updateTime">v38</div><div class="updateText"><b>v38</b>：副標改為「車窗外的日本」。</div></li>
+      <li><div class="updateTime">v37</div><div class="updateText"><b>v37</b>：圖示維持畫面大小，但壓小內嵌圖檔容量，讓 HTML 更瘦、下載更穩。</div></li>
+      <li><div class="updateTime">v36</div><div class="updateText"><b>v36</b>：百分比與完成比改成同一列顯示。</div></li>
+      <li><div class="updateTime">v35</div><div class="updateText"><b>v35</b>：清單總數、公司分類、完成三鍵成一列。</div></li>
+      <li><b>v34</b>：搜尋區與功能區改成只靠細框線區隔，不用底色。</li>
+      <li><b>v33</b>：移除搜尋區與功能區標示文字，節省空間。</li>
+      <li><b>v32</b>：搜尋區與功能區改成分開區塊，方便辨識。</li>
+      <li><b>v31</b>：手機版四個搜尋欄位改成兩兩成雙排列。</li>
+      <li><b>v30</b>：手機版功能按鈕改成兩欄排列，避免一行一行排太長。</li>
+      <li><b>v29</b>：類型標籤「トロッコ」改為「運貨小火車」。</li>
+      <li><b>v28</b>：移除下方橫向鐵道公司選單，保留上方搜尋列的鐵道公司與地區篩選。</li>
+      <li><b>v27</b>：類型標籤「SL」改為「SL(蒸汽)」。</li>
+      <li><b>v26</b>：類型標籤文字調整：季節限定、預約制、特別活動、文化主題、奢華。</li>
+      <li><b>v25</b>：圖示改為透明背景並放大，讓桌面捷徑與 favicon 更清楚，同步套用到標題前圖示。</li>
+      <li><b>v24</b>：圖示改成更貼合「旅印帖」氣質的和風列車兔兔版本，並同步套用到標題前、favicon 與桌面圖示。</li>
+      <li><b>v23</b>：介面文字從「已搭／未搭」改成「完成／未完成」。</li>
+      <li><b>v22</b>：把更新資訊收進版本小視窗，點版本號才顯示。</li>
+      <li><b>v21</b>：版本號改成莫蘭迪藍，副標改為「車窗外的日本風情」。</li>
+      <li><b>v20</b>：版本號放到大標後面，副標字首對齊大標。</li>
+      <li><b>v19</b>：正式改名為「日本觀光列車｜旅印帖」。</li>
+      <li><b>v18</b>：加入兔兔火車圖示，並作為 favicon / 桌面圖示。</li>
+      <li><b>核心功能</b>：170 筆列車、62 個公司分類、JSON 備份、CSV 匯出、自訂官網、點名稱補中譯、列印完成清單。</li>
+    </ul>
+    <button class="btn" id="updateOkBtn" type="button">知道了</button>
+    <div class="updateSmall">提示：你的勾選、備註、官網與中譯名仍然存在 JSON 備份裡。</div>
+  </div>
+</div>
+<div id="zhModal" class="zhModal" aria-hidden="true">
+  <div class="zhBox" role="dialog" aria-modal="true" aria-labelledby="zhModalTitle">
+    <h2 id="zhModalTitle">請輸入中文名稱</h2>
+    <div class="zhTrain" id="zhModalTrain"></div>
+    <label for="zhModalInput">中譯名</label>
+    <input id="zhModalInput" type="text" inputmode="text" autocomplete="off" placeholder="例：Resort 白神號">
+    <div class="zhBtns">
+      <button class="btn" id="zhSaveBtn" type="button">完成</button>
+      <button class="btn ghost" id="zhCancelBtn" type="button">取消</button>
+      <button class="btn ghost" id="zhClearBtn" type="button">清除</button>
+    </div>
+  </div>
+</div>
+<script>
+const DATA = [{"id":"北海道-01","region":"北海道","name":"花たび そうや","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/hanatabi_souya/","official_kind":"train"},{"id":"北海道-02","region":"北海道","name":"流氷物語号","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/ryuhyo/","official_kind":"train"},{"id":"北海道-03","region":"北海道","name":"SL冬の湿原号","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/","official_kind":"company"},{"id":"北海道-04","region":"北海道","name":"くしろ湿原ノロッコ号","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/kushironorokko/","official_kind":"train","status_tags":["現行車輛最後年"],"status_level":"warn","status_note":"2026 年 4 月 25 日～10 月 4 日運行；現行第 2 代車輛 2026 年限運行終了，不等於路線永久消失。"},{"id":"北海道-05","region":"北海道","name":"富良野・美瑛ノロッコ号","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/furanobiei/","official_kind":"train","status_tags":["最後年","2026-09-23最後行駛"],"status_level":"danger","status_note":"2026 年 9 月 23 日為最後行駛日；本年度營運後功成身退。"},{"id":"北海道-06","region":"北海道","name":"フラノラベンダーエクスプレス","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/","official_kind":"company"},{"id":"北海道-07","region":"北海道","name":"特急ニセコ号","type":"季節限定","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/travel/","official_kind":"company"},{"id":"北海道-08","region":"北海道","name":"赤い星","type":"預約制","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20250804_KO_Star_torain.pdf","official_kind":"company","status_tags":["2027登場"],"status_level":"info","status_note":"預定 2027 年 2 月開始運行，先行區間為札幌～網走。"},{"id":"北海道-09","region":"北海道","name":"青い星","type":"預約制","source":"https://tourist-train.info/list/hokkaido/","company":"JR北海道","official":"https://www.jrhokkaido.co.jp/CM/Info/press/pdf/20250804_KO_Star_torain.pdf","official_kind":"company","status_tags":["2027登場"],"status_level":"info","status_note":"預定 2027 年 6 月開始運行，先行區間為富良野線 旭川・美瑛～富良野。"},{"id":"北海道-10","region":"北海道","name":"ながまれ海峡号","type":"觀光","source":"https://tourist-train.info/list/hokkaido/","company":"道南いさりび鉄道","official":"https://www.shr-isaribi.jp/event/nagamare/","official_kind":"train"},{"id":"北海道-11","region":"北海道","name":"箱館ハイカラ號","type":"路面電車","source":"https://tourist-train.info/list/hokkaido/","company":"函館市電","official":"https://www.city.hakodate.hokkaido.jp/docs/2014012100991/","official_kind":"company"},{"id":"東北-01","region":"東北","name":"リゾートしらかみ","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/shirakami.html","official_kind":"train"},{"id":"東北-02","region":"東北","name":"TOHOKU EMOTION","type":"餐食","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/tohoku.html","official_kind":"train"},{"id":"東北-03","region":"東北","name":"ひなび（陽旅）","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/hinabi.html","official_kind":"train"},{"id":"東北-04","region":"東北","name":"POKEMON with YOU トレイン","type":"文化主題","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/pokemon.html","official_kind":"train"},{"id":"東北-05","region":"東北","name":"SLばんえつ物語","type":"SL(蒸汽)","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/c57.html","official_kind":"train"},{"id":"東北-06","region":"東北","name":"海里","type":"餐食","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/kairi.html","official_kind":"train"},{"id":"東北-07","region":"東北","name":"SATONO","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/satono.html","official_kind":"train"},{"id":"東北-08","region":"東北","name":"びゅうコースター風っこ","type":"運貨小火車","source":"https://tourist-train.info/list/tohoku/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/fukko.html","official_kind":"train","zh":"View Coaster 風之子","status_tags":["臨時運行"],"status_level":"info","status_note":"未停駛；屬臨時／季節運行列車。中文名建議：View Coaster 風之子。"},{"id":"東北-09","region":"東北","name":"ストーブ列車","type":"季節限定","source":"https://tourist-train.info/list/tohoku/","company":"津軽鉄道","official":"https://tsutetsu.com/","official_kind":"company"},{"id":"東北-10","region":"東北","name":"津軽『時巡』号","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"弘南鉄道","official":"https://konantetsudo.jp/event-train/","official_kind":"train"},{"id":"東北-11","region":"東北","name":"秋田縄文号","type":"文化主題","source":"https://tourist-train.info/list/tohoku/","company":"秋田内陸縦貫鉄道","official":"https://www.akita-nairiku.com/","official_kind":"company"},{"id":"東北-12","region":"東北","name":"秋田マタギ号","type":"文化主題","source":"https://tourist-train.info/list/tohoku/","company":"秋田内陸縦貫鉄道","official":"https://www.akita-nairiku.com/","official_kind":"company"},{"id":"東北-13","region":"東北","name":"笑EMI","type":"文化主題","source":"https://tourist-train.info/list/tohoku/","company":"秋田内陸縦貫鉄道","official":"https://www.akita-nairiku.com/","official_kind":"company"},{"id":"東北-14","region":"東北","name":"鳥海おもちゃ列車『なかよしこよし』","type":"文化主題","source":"https://tourist-train.info/list/tohoku/","company":"由利高原鉄道","official":"https://www.obako5.com/","official_kind":"company"},{"id":"東北-15","region":"東北","name":"nostalgic train ちょうかい","type":"文化主題","source":"https://tourist-train.info/list/tohoku/","company":"由利高原鉄道","official":"https://www.obako5.com/","official_kind":"company"},{"id":"東北-16","region":"東北","name":"さんりくしおさい","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"三陸鉄道","official":"https://www.sanrikutetsudou.com/","official_kind":"company"},{"id":"東北-17","region":"東北","name":"さんりくはまかぜ","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"三陸鉄道","official":"https://www.sanrikutetsudou.com/","official_kind":"company"},{"id":"東北-18","region":"東北","name":"お座トロ展望列車","type":"觀光","source":"https://tourist-train.info/list/tohoku/","company":"会津鉄道","official":"https://aizutetsudo.jp/","official_kind":"company"},{"id":"關東-01","region":"關東","name":"SLぐんま","type":"SL(蒸汽)","source":"https://tourist-train.info/list/kanto/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/slgunma.html","official_kind":"train"},{"id":"關東-02","region":"關東","name":"B.B.BASE","type":"自行車","source":"https://tourist-train.info/list/kanto/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/bbbase.html","official_kind":"train"},{"id":"關東-03","region":"關東","name":"サフィール踊り子","type":"特急","source":"https://tourist-train.info/list/kanto/","company":"JR東日本","official":"https://www.jreast.co.jp/saphir/","official_kind":"train"},{"id":"關東-04","region":"關東","name":"なごみ（和）","type":"奢華","source":"https://tourist-train.info/list/kanto/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/nagomi.html","official_kind":"train"},{"id":"關東-05","region":"關東","name":"E501 SAKIGAKE","type":"文化主題","source":"https://tourist-train.info/list/kanto/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/","official_kind":"company"},{"id":"關東-06","region":"關東","name":"スペーシア X","type":"特急","source":"https://tourist-train.info/list/kanto/","company":"東武鉄道","official":"https://www.tobu.co.jp/spaciax/","official_kind":"train"},{"id":"關東-07","region":"關東","name":"SL大樹","type":"SL(蒸汽)","source":"https://tourist-train.info/list/kanto/","company":"東武鉄道","official":"https://www.tobu.co.jp/sl/","official_kind":"train"},{"id":"關東-08","region":"關東","name":"スカイツリートレイン","type":"觀光","source":"https://tourist-train.info/list/kanto/","company":"東武鉄道","official":"https://www.tobu.co.jp/","official_kind":"company"},{"id":"關東-09","region":"關東","name":"やがぴぃカー","type":"文化主題","source":"https://tourist-train.info/list/kanto/","company":"わたらせ渓谷鐵道","official":"https://www.watetsu.com/","official_kind":"company"},{"id":"關東-10","region":"關東","name":"トロッコわっしー号","type":"運貨小火車","source":"https://tourist-train.info/list/kanto/","company":"わたらせ渓谷鐵道","official":"https://www.watetsu.com/","official_kind":"company"},{"id":"關東-11","region":"關東","name":"トロッコわたらせ渓谷号","type":"運貨小火車","source":"https://tourist-train.info/list/kanto/","company":"わたらせ渓谷鐵道","official":"https://www.watetsu.com/","official_kind":"company"},{"id":"關東-12","region":"關東","name":"SLもおか","type":"SL(蒸汽)","source":"https://tourist-train.info/list/kanto/","company":"真岡鐵道","official":"https://www.moka-railway.co.jp/sl/","official_kind":"train"},{"id":"關東-13","region":"關東","name":"SLパレオエクスプレス","type":"SL(蒸汽)","source":"https://tourist-train.info/list/kanto/","company":"秩父鉄道","official":"https://www.chichibu-railway.co.jp/slpaleo/","official_kind":"train"},{"id":"關東-14","region":"關東","name":"西武 旅するレストラン『52席の至福』","type":"餐食","source":"https://tourist-train.info/list/kanto/","company":"西武鉄道","official":"https://www.seiburailway.jp/railways/seibu52-shifuku/","official_kind":"train"},{"id":"關東-15","region":"關東","name":"房総里山トロッコ","type":"運貨小火車","source":"https://tourist-train.info/list/kanto/","company":"小湊鐵道","official":"https://www.kominato.co.jp/","official_kind":"company"},{"id":"關東-16","region":"關東","name":"ロマンスカー","type":"特急","source":"https://tourist-train.info/list/kanto/","company":"小田急電鉄","official":"https://www.odakyu.jp/romancecar/","official_kind":"train"},{"id":"關東-17","region":"關東","name":"箱根登山電車","type":"山岳","source":"https://tourist-train.info/list/kanto/","company":"小田急箱根","official":"https://www.hakonenavi.jp/hakone-tozan/","official_kind":"company"},{"id":"關東-18","region":"關東","name":"リゾート21","type":"觀光","source":"https://tourist-train.info/list/kanto/","company":"伊豆急行","official":"https://www.izukyu.co.jp/resort21/","official_kind":"train"},{"id":"關東-19","region":"關東","name":"THE ROYAL EXPRESS","type":"奢華","source":"https://tourist-train.info/list/kanto/","company":"東急・伊豆急行","official":"https://www.the-royalexpress.jp/","official_kind":"train","status_tags":["北海道最後年"],"status_level":"warn","status_note":"伊豆急 2100 系車輛的北海道運行至 2026 年為最後年；2027 年夏季預定改用 JR北海道「赤い星」編成。"},{"id":"關東-20","region":"關東","name":"Fine Dining Train「vies」","type":"餐食","source":"https://www.seiburailway.jp/newsroom/news/20260326_vies","company":"西武鉄道","official":"https://www.seiburailway.jp/railways/vies/","official_kind":"train","status_tags":["長期預告","2028登場"],"status_level":"info","status_note":"預定 2028 年 3 月運行開始；西武新型 Fine Dining Train。"},{"id":"關東-21","region":"關東","name":"ラッピング列車・イベント用車両など（關東）","type":"文化主題","source":"https://tourist-train.info/list/kanto/","company":"その他・複数会社","official":"","official_kind":""},{"id":"甲信越-01","region":"甲信越","name":"越乃Shu＊Kura","type":"餐食/酒","source":"https://tourist-train.info/list/koshinetsu/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/shukura.html","official_kind":"train"},{"id":"甲信越-02","region":"甲信越","name":"HIGH RAIL 1375","type":"星空","source":"https://tourist-train.info/list/koshinetsu/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/highrail1375.html","official_kind":"train"},{"id":"甲信越-03","region":"甲信越","name":"リゾートビューふるさと","type":"觀光","source":"https://tourist-train.info/list/koshinetsu/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/furusato.html","official_kind":"train"},{"id":"甲信越-04","region":"甲信越","name":"ナイトビュー姨捨","type":"夜景","source":"https://tourist-train.info/list/koshinetsu/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/","official_kind":"company"},{"id":"甲信越-05","region":"甲信越","name":"おいこっと","type":"觀光","source":"https://tourist-train.info/list/koshinetsu/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/oykot.html","official_kind":"train"},{"id":"甲信越-06","region":"甲信越","name":"えちごトキめきリゾート雪月花","type":"餐食","source":"https://tourist-train.info/list/koshinetsu/","company":"えちごトキめき鉄道","official":"https://www.echigo-tokimeki.co.jp/setsugekka/","official_kind":"train"},{"id":"甲信越-07","region":"甲信越","name":"ゆめぞら","type":"トンネル","source":"https://tourist-train.info/list/koshinetsu/","company":"北越急行","official":"https://www.hokuhoku.co.jp/","official_kind":"company"},{"id":"甲信越-08","region":"甲信越","name":"ろくもん","type":"餐食","source":"https://tourist-train.info/list/koshinetsu/","company":"しなの鉄道","official":"https://www.shinanorailway.co.jp/rokumon/","official_kind":"train"},{"id":"甲信越-09","region":"甲信越","name":"ゆけむり","type":"展望","source":"https://tourist-train.info/list/koshinetsu/","company":"長野電鉄","official":"https://www.nagaden-net.co.jp/","official_kind":"company"},{"id":"甲信越-10","region":"甲信越","name":"スノーモンキー","type":"特急","source":"https://tourist-train.info/list/koshinetsu/","company":"長野電鉄","official":"https://www.nagaden-net.co.jp/","official_kind":"company"},{"id":"甲信越-11","region":"甲信越","name":"富士山ビュー特急","type":"特急","source":"https://tourist-train.info/list/koshinetsu/","company":"富士山麓電気鉄道","official":"https://www.fujikyu-railway.jp/","official_kind":"company"},{"id":"甲信越-12","region":"甲信越","name":"フジサン特急","type":"特急","source":"https://tourist-train.info/list/koshinetsu/","company":"富士山麓電気鉄道","official":"https://www.fujikyu-railway.jp/","official_kind":"company"},{"id":"甲信越-13","region":"甲信越","name":"富士登山電車","type":"觀光","source":"https://tourist-train.info/list/koshinetsu/","company":"富士山麓電気鉄道","official":"https://www.fujikyu-railway.jp/","official_kind":"company"},{"id":"甲信越-14","region":"甲信越","name":"トーマスランド25周年記念号","type":"文化主題","source":"https://tourist-train.info/list/koshinetsu/","company":"富士山麓電気鉄道","official":"https://www.fujikyu-railway.jp/","official_kind":"company"},{"id":"東海-01","region":"東海","name":"飯田線秘境駅号","type":"秘境駅","source":"https://tourist-train.info/list/tokai/","company":"JR東海","official":"https://recommend.jr-central.co.jp/","official_kind":"company"},{"id":"東海-02","region":"東海","name":"SLかわね路号／SL南アルプス号","type":"SL(蒸汽)","source":"https://tourist-train.info/list/tokai/","company":"大井川鐵道","official":"https://daitetsu.jp/sl","official_kind":"train"},{"id":"東海-03","region":"東海","name":"アプト式列車","type":"山岳","source":"https://tourist-train.info/list/tokai/","company":"大井川鐵道","official":"https://daitetsu.jp/","official_kind":"company"},{"id":"東海-04","region":"東海","name":"きかんしゃトーマス号","type":"文化主題","source":"https://tourist-train.info/list/tokai/","company":"大井川鐵道","official":"https://daitetsu.jp/day-out-with-thomas","official_kind":"train"},{"id":"東海-05","region":"東海","name":"きかんしゃトビー号","type":"文化主題","source":"https://tourist-train.info/list/tokai/","company":"大井川鐵道","official":"https://daitetsu.jp/day-out-with-thomas","official_kind":"train"},{"id":"東海-06","region":"東海","name":"夜景電車","type":"夜景","source":"https://tourist-train.info/list/tokai/","company":"岳南電車","official":"https://www.gakutetsu.jp/","official_kind":"company"},{"id":"東海-07","region":"東海","name":"パノラマsuper","type":"展望","source":"https://tourist-train.info/list/tokai/","company":"名古屋鉄道","official":"https://www.meitetsu.co.jp/","official_kind":"company"},{"id":"東海-08","region":"東海","name":"納涼ビール電車／おでんしゃ","type":"季節限定","source":"https://tourist-train.info/list/tokai/","company":"豊橋鉄道","official":"https://www.toyotetsu.com/","official_kind":"company"},{"id":"東海-09","region":"東海","name":"大正ロマン号（食堂車）","type":"餐食","source":"https://tourist-train.info/list/tokai/","company":"明知鉄道","official":"https://www.aketetsu.co.jp/","official_kind":"company"},{"id":"東海-10","region":"東海","name":"ながら","type":"餐食","source":"https://tourist-train.info/list/tokai/","company":"長良川鉄道","official":"https://www.nagatetsu.co.jp/nagara/","official_kind":"train"},{"id":"東海-11","region":"東海","name":"ねおがわ","type":"觀光","source":"https://tourist-train.info/list/tokai/","company":"樽見鉄道","official":"https://tarumi-railway.com/","official_kind":"company"},{"id":"東海-12","region":"東海","name":"枡酒列車","type":"季節限定","source":"https://tourist-train.info/list/tokai/","company":"養老鉄道","official":"https://www.yororailway.co.jp/","official_kind":"company"},{"id":"北陸-01","region":"北陸","name":"花嫁のれん","type":"餐食","source":"https://tourist-train.info/list/hokuriku/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"北陸-02","region":"北陸","name":"ベル・モンターニュ・エ・メール～べるもんた～","type":"餐食","source":"https://tourist-train.info/list/hokuriku/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"北陸-03","region":"北陸","name":"黒部峡谷トロッコ電車","type":"運貨小火車","source":"https://tourist-train.info/list/hokuriku/","company":"黒部峡谷鉄道","official":"https://www.kurotetu.co.jp/","official_kind":"train"},{"id":"北陸-04","region":"北陸","name":"アルプスエキスプレス","type":"觀光","source":"https://tourist-train.info/list/hokuriku/","company":"富山地方鉄道","official":"https://www.chitetsu.co.jp/","official_kind":"company"},{"id":"北陸-05","region":"北陸","name":"ダブルデッカーエキスプレス","type":"展望","source":"https://tourist-train.info/list/hokuriku/","company":"富山地方鉄道","official":"https://www.chitetsu.co.jp/","official_kind":"company"},{"id":"北陸-06","region":"北陸","name":"富山地鉄レトロ電車","type":"復古","source":"https://tourist-train.info/list/hokuriku/","company":"富山地方鉄道","official":"https://www.chitetsu.co.jp/","official_kind":"company"},{"id":"北陸-07","region":"北陸","name":"一万三千尺物語","type":"餐食","source":"https://tourist-train.info/list/hokuriku/","company":"富山地方鉄道","official":"https://13000story.com/","official_kind":"train"},{"id":"北陸-08","region":"北陸","name":"のと里山里海号（震災語り部観光列車）","type":"觀光","source":"https://tourist-train.info/list/hokuriku/","company":"のと鉄道","official":"https://nototetsu.jp/","official_kind":"train"},{"id":"北陸-09","region":"北陸","name":"恐竜列車","type":"文化主題","source":"https://tourist-train.info/list/hokuriku/","company":"えちぜん鉄道","official":"https://www.echizen-tetudo.co.jp/dinosaur_train/","official_kind":"train"},{"id":"北陸-10","region":"北陸","name":"レトラム","type":"復古","source":"https://tourist-train.info/list/hokuriku/","company":"福井鉄道","official":"https://fukutetsu.jp/","official_kind":"company"},{"id":"北陸-11","region":"北陸","name":"ラッピング列車・イベント用車両など（北陸）","type":"文化主題","source":"https://tourist-train.info/list/hokuriku/","company":"その他・複数会社","official":"","official_kind":""},{"id":"關西-01","region":"關西","name":"はなあかり","type":"奢華","source":"https://tourist-train.info/list/kansai/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/hanaakari/","official_kind":"train","status_tags":["2026春"],"status_level":"info","status_note":"補註：2026 年春季於廣島～岩國間運行。"},{"id":"關西-02","region":"關西","name":"パンダくろしお","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"關西-03","region":"關西","name":"うみやまむすび","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"關西-04","region":"關西","name":"しまかぜ","type":"特急","source":"https://tourist-train.info/list/kansai/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/senden/shimakaze/","official_kind":"train"},{"id":"關西-05","region":"關西","name":"青の交響曲（シンフォニー）","type":"特急","source":"https://tourist-train.info/list/kansai/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/senden/blue_symphony/","official_kind":"train"},{"id":"關西-06","region":"關西","name":"あをによし","type":"特急","source":"https://tourist-train.info/list/kansai/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/senden/aoniyoshi/","official_kind":"train"},{"id":"關西-07","region":"關西","name":"楽","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/","official_kind":"company"},{"id":"關西-08","region":"關西","name":"つどい","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/","official_kind":"company"},{"id":"關西-09","region":"關西","name":"かぎろひ","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/","official_kind":"company"},{"id":"關西-27","region":"關西","name":"Les Saveurs 志摩","type":"餐食","source":"https://www.kintetsu.co.jp/senden/les-saveurs-shima/","company":"近畿日本鉄道","official":"https://www.kintetsu.co.jp/senden/les-saveurs-shima/","official_kind":"train","status_tags":["新增","2026登場"],"status_level":"info","status_note":"2026 年 11 月 1 日運行開始；2026 年 9 月 1 日起預定發售 11、12 月運行分。"},{"id":"關西-10","region":"關西","name":"忍者列車","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"伊賀鉄道","official":"https://www.igatetsu.co.jp/?page_id=61","official_kind":"train"},{"id":"關西-11","region":"關西","name":"嵯峨野トロッコ列車","type":"運貨小火車","source":"https://tourist-train.info/list/kansai/","company":"嵯峨野観光鉄道","official":"https://www.sagano-kanko.co.jp/","official_kind":"train","status_tags":["現行車輛退役","2027春新車"],"status_level":"warn","status_note":"現行車輛預定 2026 年內營業運轉後退役；2027 年春導入新車，不刪卡片。"},{"id":"關西-12","region":"關西","name":"きらら","type":"展望","source":"https://tourist-train.info/list/kansai/","company":"叡山電鉄","official":"https://eizandensha.co.jp/about/kirara/","official_kind":"train"},{"id":"關西-13","region":"關西","name":"ひえい","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"叡山電鉄","official":"https://eizandensha.co.jp/about/hiei/","official_kind":"train"},{"id":"關西-14","region":"關西","name":"舞","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"叡山電鉄","official":"https://eizandensha.co.jp/about/mai/","official_kind":"train"},{"id":"關西-15","region":"關西","name":"京とれいん 雅洛","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"阪急電鉄","official":"https://www.hankyu.co.jp/area_info/kyotrain-garaku/","official_kind":"train"},{"id":"關西-17","region":"關西","name":"GRAN 天空","type":"山岳","source":"https://tourist-train.info/list/kansai/","company":"南海電気鉄道","official":"https://www.nankai.co.jp/traffic/kankoutrain/grantenku/","official_kind":"company","status_tags":["接替舊天空"],"status_level":"info","status_note":"舊「天空」已於 2026 年 3 月 20 日定期運行終了；GRAN 天空自 2026 年 4 月 24 日接替登場。"},{"id":"關西-18","region":"關西","name":"めでたいでんしゃ","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"南海電気鉄道","official":"https://www.nankai.co.jp/kada/medetai.html","official_kind":"train"},{"id":"關西-19","region":"關西","name":"たま電車","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"和歌山電鐵","official":"https://wakayama-dentetsu.co.jp/train/","official_kind":"train"},{"id":"關西-20","region":"關西","name":"たま電車ミュージアム号","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"和歌山電鐵","official":"https://wakayama-dentetsu.co.jp/train/","official_kind":"train"},{"id":"關西-21","region":"關西","name":"いちご電車","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"和歌山電鐵","official":"https://wakayama-dentetsu.co.jp/train/","official_kind":"train"},{"id":"關西-22","region":"關西","name":"うめ星電車","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"和歌山電鐵","official":"https://wakayama-dentetsu.co.jp/train/","official_kind":"train"},{"id":"關西-23","region":"關西","name":"チャギントン電車","type":"文化主題","source":"https://tourist-train.info/list/kansai/","company":"和歌山電鐵","official":"https://wakayama-dentetsu.co.jp/train/","official_kind":"train"},{"id":"關西-24","region":"關西","name":"丹後くろまつ号","type":"餐食","source":"https://tourist-train.info/list/kansai/","company":"京都丹後鉄道","official":"https://trains.willer.co.jp/matsu/","official_kind":"train"},{"id":"關西-25","region":"關西","name":"丹後あかまつ号","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"京都丹後鉄道","official":"https://trains.willer.co.jp/matsu/","official_kind":"train"},{"id":"關西-26","region":"關西","name":"丹後あおまつ号","type":"觀光","source":"https://tourist-train.info/list/kansai/","company":"京都丹後鉄道","official":"https://trains.willer.co.jp/matsu/","official_kind":"train"},{"id":"山陽・山陰-01","region":"山陽・山陰","name":"SAKU美SAKU楽","type":"餐食","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"山陽・山陰-02","region":"山陽・山陰","name":"ラ・マル・ド・ボァ","type":"藝術/自行車","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"山陽・山陰-03","region":"山陽・山陰","name":"etSETOra","type":"餐食","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"山陽・山陰-04","region":"山陽・山陰","name":"あめつち","type":"餐食","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"山陽・山陰-05","region":"山陽・山陰","name":"SLやまぐち号","type":"SL(蒸汽)","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.c571.jp/","official_kind":"train"},{"id":"山陽・山陰-06","region":"山陽・山陰","name":"○○のはなし","type":"觀光","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/kankoutrain/","official_kind":"company"},{"id":"山陽・山陰-07","region":"山陽・山陰","name":"ハローキティ新幹線","type":"文化主題","source":"https://tourist-train.info/list/sanyo-sanin/","company":"JR西日本","official":"https://www.jr-hellokittyshinkansen.jp/","official_kind":"train"},{"id":"山陽・山陰-08","region":"山陽・山陰","name":"おかでんチャギントン電車","type":"文化主題","source":"https://tourist-train.info/list/sanyo-sanin/","company":"岡山電気軌道","official":"https://okaden-chuggington.com/","official_kind":"train"},{"id":"山陽・山陰-09","region":"山陽・山陰","name":"ラッピング列車・イベント用車両など（山陽・山陰）","type":"文化主題","source":"https://tourist-train.info/list/sanyo-sanin/","company":"その他・複数会社","official":"","official_kind":""},{"id":"四國-01","region":"四國","name":"伊予灘ものがたり","type":"餐食","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://iyonadamonogatari.com/","official_kind":"train"},{"id":"四國-02","region":"四國","name":"志国土佐 時代の夜明けのものがたり","type":"餐食","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-shikoku.co.jp/toki-yake/","official_kind":"train"},{"id":"四國-03","region":"四國","name":"四国まんなか千年ものがたり","type":"餐食","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-shikoku.co.jp/sennenmonogatari/","official_kind":"train"},{"id":"四國-04","region":"四國","name":"藍よしのがわトロッコ","type":"運貨小火車","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-shikoku.co.jp/01_trainbus/event_train/","official_kind":"company"},{"id":"四國-05","region":"四國","name":"しまんトロッコ","type":"運貨小火車","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-shikoku.co.jp/01_trainbus/event_train/","official_kind":"company"},{"id":"四國-06","region":"四國","name":"鉄道ホビートレイン","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-shikoku.co.jp/01_trainbus/event_train/","official_kind":"company"},{"id":"四國-07","region":"四國","name":"海洋堂ホビートレイン","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-shikoku.co.jp/01_trainbus/event_train/","official_kind":"company"},{"id":"四國-08","region":"四國","name":"瀬戸大橋アンパンマントロッコ","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-eki.com/aptrain/","official_kind":"train"},{"id":"四國-09","region":"四國","name":"土讃線 あかいアンパンマン列車","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-eki.com/aptrain/","official_kind":"train"},{"id":"四國-10","region":"四國","name":"土讃線 きいろいアンパンマン列車","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-eki.com/aptrain/","official_kind":"train"},{"id":"四國-11","region":"四國","name":"予讃線 8000系アンパンマン列車","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-eki.com/aptrain/","official_kind":"train"},{"id":"四國-12","region":"四國","name":"予讃線 宇和海アンパンマン列車","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-eki.com/aptrain/","official_kind":"train"},{"id":"四國-13","region":"四國","name":"ゆうゆうアンパンマンカー","type":"文化主題","source":"https://tourist-train.info/list/shikoku/","company":"JR四国","official":"https://www.jr-eki.com/aptrain/","official_kind":"train"},{"id":"四國-14","region":"四國","name":"DMV","type":"特殊車輛","source":"https://tourist-train.info/list/shikoku/","company":"阿佐海岸鉄道","official":"https://asatetu.com/","official_kind":"train"},{"id":"四國-15","region":"四國","name":"しんたろう号","type":"展望","source":"https://tourist-train.info/list/shikoku/","company":"土佐くろしお鉄道","official":"https://gomen-nahari.com/","official_kind":"company"},{"id":"四國-16","region":"四國","name":"やたろう号","type":"展望","source":"https://tourist-train.info/list/shikoku/","company":"土佐くろしお鉄道","official":"https://gomen-nahari.com/","official_kind":"company"},{"id":"四國-17","region":"四國","name":"坊っちゃん列車","type":"復古","source":"https://tourist-train.info/list/shikoku/","company":"伊予鉄道","official":"https://www.iyotetsu.co.jp/botchan/","official_kind":"train"},{"id":"九州-01","region":"九州","name":"ゆふいんの森","type":"特急","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/yufuinnomori/","official_kind":"train"},{"id":"九州-02","region":"九州","name":"かんぱち・いちろく","type":"餐食","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu-kanpachiichiroku.jp/","official_kind":"train"},{"id":"九州-03","region":"九州","name":"或る列車","type":"餐食","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu-aruressha.jp/","official_kind":"train"},{"id":"九州-04","region":"九州","name":"ふたつ星4047","type":"觀光","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/futatsuboshi/","official_kind":"train"},{"id":"九州-05","region":"九州","name":"あそぼーい！","type":"親子","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/asoboy/","official_kind":"train"},{"id":"九州-06","region":"九州","name":"かわせみ やませみ","type":"觀光","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/kawasemi_yamasemi/","official_kind":"train"},{"id":"九州-07","region":"九州","name":"A列車で行こう","type":"酒吧","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/atrain/","official_kind":"train"},{"id":"九州-08","region":"九州","name":"海幸山幸","type":"觀光","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/umisachiyamasachi/","official_kind":"train"},{"id":"九州-09","region":"九州","name":"指宿のたまて箱","type":"文化主題","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu.co.jp/trains/ibusukinotamatebako/","official_kind":"train"},{"id":"九州-10","region":"九州","name":"36ぷらす3","type":"奢華","source":"https://tourist-train.info/list/kyushu/","company":"JR九州","official":"https://www.jrkyushu-36plus3.jp/","official_kind":"train","status_tags":["暫停運行"],"status_level":"danger","status_note":"2026 年 5 月 12 日～2026 年秋，因 6 號車更新暫停運行；預定 2026 年秋再始動。"},{"id":"九州-11","region":"九州","name":"THE RAIL KITCHEN CHIKUGO","type":"餐食","source":"https://tourist-train.info/list/kyushu/","company":"西日本鉄道","official":"https://www.railkitchen.jp/","official_kind":"train"},{"id":"九州-12","region":"九州","name":"水都","type":"觀光","source":"https://tourist-train.info/list/kyushu/","company":"西日本鉄道","official":"https://www.nishitetsu.jp/train/kanko/","official_kind":"company"},{"id":"九州-13","region":"九州","name":"旅人","type":"觀光","source":"https://tourist-train.info/list/kyushu/","company":"西日本鉄道","official":"https://www.nishitetsu.jp/train/kanko/","official_kind":"company"},{"id":"九州-14","region":"九州","name":"潮風号","type":"運貨小火車","source":"https://tourist-train.info/list/kyushu/","company":"平成筑豊鉄道","official":"https://www.retro-line.net/","official_kind":"train"},{"id":"九州-15","region":"九州","name":"ことこと列車","type":"餐食","source":"https://tourist-train.info/list/kyushu/","company":"平成筑豊鉄道","official":"https://www.heichiku.net/cotocoto/","official_kind":"train"},{"id":"九州-16","region":"九州","name":"しまてつカフェトレイン","type":"餐食","source":"https://tourist-train.info/list/kyushu/","company":"島原鉄道","official":"https://www.shimatetsu-cafetrain.com/","official_kind":"train"},{"id":"九州-17","region":"九州","name":"みなと","type":"路面電車","source":"https://tourist-train.info/list/kyushu/","company":"長崎電気軌道","official":"https://www.naga-den.com/","official_kind":"company"},{"id":"九州-18","region":"九州","name":"あかり","type":"路面電車","source":"https://tourist-train.info/list/kyushu/","company":"長崎電気軌道","official":"https://www.naga-den.com/","official_kind":"company"},{"id":"九州-19","region":"九州","name":"ゆうすげ号","type":"運貨小火車","source":"https://tourist-train.info/list/kyushu/","company":"南阿蘇鉄道","official":"https://www.mt-torokko.com/","official_kind":"train"},{"id":"九州-20","region":"九州","name":"おれんじ食堂","type":"餐食","source":"https://tourist-train.info/list/kyushu/","company":"肥薩おれんじ鉄道","official":"https://www.hs-orange.com/oshoku/","official_kind":"train"},{"id":"夜行・寢台-01","region":"夜行・寢台","name":"TRAIN SUITE 四季島","type":"奢華寢台","source":"https://tourist-train.info/list/night-train/","company":"JR東日本","official":"https://www.jreast.co.jp/shiki-shima/","official_kind":"train"},{"id":"夜行・寢台-02","region":"夜行・寢台","name":"TWILIGHT EXPRESS 瑞風","type":"奢華寢台","source":"https://tourist-train.info/list/night-train/","company":"JR西日本","official":"https://www.twilightexpress-mizukaze.jp/","official_kind":"train"},{"id":"夜行・寢台-03","region":"夜行・寢台","name":"ななつ星in九州","type":"奢華寢台","source":"https://tourist-train.info/list/night-train/","company":"JR九州","official":"https://www.cruisetrain-sevenstars.jp/","official_kind":"train"},{"id":"夜行・寢台-04","region":"夜行・寢台","name":"サンライズ出雲","type":"夜行/寢台","source":"https://tourist-train.info/list/night-train/","company":"JR西日本・JR東海","official":"https://www.jr-odekake.net/train/sunriseseto_izumo/","official_kind":"company"},{"id":"夜行・寢台-05","region":"夜行・寢台","name":"サンライズ瀬戸","type":"夜行/寢台","source":"https://tourist-train.info/list/night-train/","company":"JR西日本・JR東海","official":"https://www.jr-odekake.net/train/sunriseseto_izumo/","official_kind":"company"},{"id":"夜行・寢台-06","region":"夜行・寢台","name":"WEST EXPRESS 銀河","type":"夜行","source":"https://tourist-train.info/list/night-train/","company":"JR西日本","official":"https://www.jr-odekake.net/railroad/westexginga/","official_kind":"train"},{"id":"夜行・寢台-07","region":"夜行・寢台","name":"名称未定（JR東日本・新夜行特急）","type":"預約制","source":"https://tourist-train.info/list/night-train/","company":"JR東日本","official":"https://www.jreast.co.jp/press/2025/20250610_ho03.pdf","official_kind":"company","status_tags":["名稱未定","2027春"],"status_level":"info","status_note":"目前維持名稱未定；官方公布 2027 年春導入，E657 系改造，全席綠色車廂個室。"},{"id":"夜行・寢台-08","region":"夜行・寢台","name":"アルプス","type":"夜行","source":"https://tourist-train.info/list/night-train/","company":"JR東日本","official":"https://www.jreast.co.jp/railway/joyful/","official_kind":"company"},{"id":"夜行・寢台-09","region":"夜行・寢台","name":"尾瀬夜行","type":"夜行","source":"https://tourist-train.info/list/night-train/","company":"東武鉄道","official":"https://www.tobu.co.jp/","official_kind":"company"},{"id":"夜行・寢台-10","region":"夜行・寢台","name":"日光紅葉夜行","type":"夜行","source":"https://tourist-train.info/list/night-train/","company":"東武鉄道","official":"https://www.tobu.co.jp/","official_kind":"company"},{"id":"夜行・寢台-11","region":"夜行・寢台","name":"スノーパル","type":"夜行","source":"https://tourist-train.info/list/night-train/","company":"東武鉄道","official":"https://www.tobu.co.jp/","official_kind":"company"}];
+const COMPANY_ORDER = ["JR北海道", "JR東日本", "JR東海", "JR西日本", "JR四国", "JR九州", "JR西日本・JR東海", "道南いさりび鉄道", "函館市電", "津軽鉄道", "弘南鉄道", "秋田内陸縦貫鉄道", "由利高原鉄道", "三陸鉄道", "会津鉄道", "東武鉄道", "わたらせ渓谷鐵道", "真岡鐵道", "秩父鉄道", "西武鉄道", "小湊鐵道", "小田急電鉄", "小田急箱根", "伊豆急行", "東急・伊豆急行", "えちごトキめき鉄道", "北越急行", "しなの鉄道", "長野電鉄", "富士山麓電気鉄道", "大井川鐵道", "岳南電車", "名古屋鉄道", "豊橋鉄道", "明知鉄道", "長良川鉄道", "樽見鉄道", "養老鉄道", "黒部峡谷鉄道", "富山地方鉄道", "のと鉄道", "えちぜん鉄道", "福井鉄道", "近畿日本鉄道", "伊賀鉄道", "嵯峨野観光鉄道", "叡山電鉄", "阪急電鉄", "南海電気鉄道", "和歌山電鐵", "京都丹後鉄道", "岡山電気軌道", "阿佐海岸鉄道", "土佐くろしお鉄道", "伊予鉄道", "西日本鉄道", "平成筑豊鉄道", "島原鉄道", "長崎電気軌道", "南阿蘇鉄道", "肥薩おれんじ鉄道", "その他・複数会社"];
+const REGION_ORDER = ["北海道", "東北", "關東", "甲信越", "東海", "北陸", "關西", "山陽・山陰", "四國", "九州", "夜行・寢台"];
+const STORE_KEY = "jp_tourist_train_tabijirushi_v51_pwa";
+const LEGACY_KEYS = ["jp_tourist_train_tabijirushi_v50_new_favicon", "jp_tourist_train_tabijirushi_v49_update_timeline", "jp_tourist_train_tabijirushi_v48_train_updates", "jp_tourist_train_tabijirushi_v47_gran_tenku", "jp_tourist_train_tabijirushi_v46_action_outline", "jp_tourist_train_tabijirushi_v45_clear_outline", "jp_tourist_train_tabijirushi_v44_print_done_label", "jp_tourist_train_tabijirushi_v43_teal_separator", "jp_tourist_train_tabijirushi_v42_green_separator", "jp_tourist_train_tabijirushi_v41_gold_separator", "jp_tourist_train_tabijirushi_v40_mini_fuji", "jp_tourist_train_tabijirushi_v39_no_title_icon", "jp_tourist_train_tabijirushi_v38_subtitle", "jp_tourist_train_tabijirushi_v37_slim_icon", "jp_tourist_train_tabijirushi_v36_progress_inline", "jp_tourist_train_tabijirushi_v31_search_pairs", "jp_tourist_train_tabijirushi_v30_action_pairs", "jp_tourist_train_tabijirushi_v29_type_trolley", "jp_tourist_train_tabijirushi_v28_no_company_tabs", "jp_tourist_train_tabijirushi_v27_sl_steam", "jp_tourist_train_tabijirushi_v26_type_labels", "jp_tourist_train_tabijirushi_v25_big_transparent_icon", "jp_tourist_train_tabijirushi_v24_wafuu_icon", "jp_tourist_train_tabijirushi_v23_done_label", "jp_tourist_train_tabijirushi_v22_version_modal", "jp_tourist_train_checklist_v22_update_modal", "jp_tourist_train_checklist_v22_updates_modal", "jp_tourist_train_tabijirushi_v21_morandi_blue", "jp_tourist_train_tabijirushi_v20_title_version", "jp_tourist_train_tabijirushi_v19", "jp_tourist_train_checklist_v18_bunny_icon", "jp_tourist_train_checklist_v17_export_filename", "jp_tourist_train_checklist_v16_click_name_fix", "jp_tourist_train_checklist_v15_print_name_break", "jp_tourist_train_checklist_v14_click_name_zh", "jp_tourist_train_checklist_v13_no_wish_status", "jp_tourist_train_checklist_v12_zh_after_name", "jp_tourist_train_checklist_v11_single_html_names", "jp_tourist_train_checklist_v10_names", "jp_tourist_train_checklist_v8_print_done", "jp_tourist_train_checklist_v7_custom_official", "jp_tourist_train_checklist_v5_json_company_official", "jp_tourist_train_checklist_v4_company_official", "jp_tourist_train_checklist_v4_company", "jp_tourist_train_checklist_v3_company", "jp_tourist_train_checklist_v2", "jp_tourist_train_checklist_v1"];
+let state = { company: "全部", region: "全部地區", status: "all", q: "", saved: load(), editingZhId: "" };
+
+function load() {
+  try {
+    const current = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+    if (current && typeof current === "object") return current;
+    for (const key of LEGACY_KEYS) {
+      const legacy = JSON.parse(localStorage.getItem(key) || "null");
+      if (legacy && typeof legacy === "object") return legacy;
+    }
+    return {};
+  } catch(e) { return {}; }
+}
+function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state.saved)); }
+function itemState(id) {
+  return {done:false,date:"",memo:"",zhName:"",customOfficial:"",customOfficialKind:"", ...(state.saved[id] || {})};
+}
+function patch(id, obj) { state.saved[id] = {...itemState(id), ...obj}; save(); render(); }
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s ?? '';
+  return d.innerHTML;
+}
+
+function itemStatusHtml(it) {
+  const tags = Array.isArray(it.status_tags) ? it.status_tags : [];
+  const level = it.status_level || '';
+  const tagCls = level === 'danger' ? 'danger' : (level === 'warn' ? 'warn' : '');
+  const tagHtml = tags.length ? `<div class="statusRow">${tags.map(t => `<span class="statusTag ${tagCls}">${esc(t)}</span>`).join('')}</div>` : '';
+  const noteHtml = it.status_note ? `<div class="statusNote ${tagCls}">${esc(it.status_note)}</div>` : '';
+  return tagHtml + noteHtml;
+}
+function normalizeUrl(raw) {
+  let url = String(raw || '').trim();
+  if (!url) return '';
+  if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
+  return url;
+}
+function getOfficial(it) {
+  const s = itemState(it.id);
+  const custom = normalizeUrl(s.customOfficial || '');
+  if (custom) return {url: custom, kind: 'custom', label: '我的官網'};
+  const url = normalizeUrl(it.official || '');
+  if (!url) return {url: '', kind: '', label: ''};
+  const kind = it.official_kind || '';
+  return {url, kind, label: kind === 'company' ? '公司官網' : '列車官網'};
+}
+function nameParts(it) {
+  const s = itemState(it.id);
+  const savedZh = String(s.zhName || '').trim();
+  const builtinZh = String(it.zh || '').trim();
+  const zhName = savedZh || builtinZh;
+  const display = zhName ? `${it.name}（${zhName}）` : it.name;
+  return {main: it.name, zhName, display};
+}
+function displayNamePlain(it) {
+  return nameParts(it).display;
+}
+function nameHtmlForCard(it) {
+  const n = nameParts(it);
+  if (!n.zhName) return `<span class="nameJp">${esc(it.name)}</span>`;
+  return `<span class="nameJp">${esc(it.name)}</span><span class="screenParen">（</span><span class="nameZh">${esc(n.zhName)}</span><span class="screenParen">）</span>`;
+}
+function nameHtmlForPrint(it) {
+  const n = nameParts(it);
+  const zh = n.zhName ? `<span class="printZhName">${esc(n.zhName)}</span>` : '';
+  return `<b class="printTrainName"><span class="printJpName">${esc(it.name)}</span>${zh}</b>`;
+}
+function openZhModal(id) {
+  const it = DATA.find(x => x.id === id);
+  if (!it) return;
+  const s = itemState(id);
+  state.editingZhId = id;
+  document.getElementById('zhModalTrain').textContent = it.name;
+  const input = document.getElementById('zhModalInput');
+  input.value = s.zhName || '';
+  const modal = document.getElementById('zhModal');
+  modal.classList.add('show');
+  modal.setAttribute('aria-hidden', 'false');
+  setTimeout(() => { input.focus(); input.select(); }, 60);
+}
+function closeZhModal() {
+  state.editingZhId = '';
+  const modal = document.getElementById('zhModal');
+  modal.classList.remove('show');
+  modal.setAttribute('aria-hidden', 'true');
+}
+function saveZhModal() {
+  const id = state.editingZhId;
+  if (!id) return closeZhModal();
+  const val = document.getElementById('zhModalInput').value.trim();
+  patch(id, {zhName: val});
+  closeZhModal();
+}
+function clearZhModal() {
+  const id = state.editingZhId;
+  if (!id) return closeZhModal();
+  patch(id, {zhName: ''});
+  closeZhModal();
+}
+function editOfficial(id) {
+  const it = DATA.find(x => x.id === id);
+  if (!it) return;
+  const s = itemState(id);
+  const now = s.customOfficial || getOfficial(it).url || '';
+  const msg = `貼上「${it.name}」的正確官網連結：\n\n留空＝清除你自己補的連結，回到原本內建連結。`;
+  const next = prompt(msg, now);
+  if (next === null) return;
+  const url = normalizeUrl(next);
+  if (!url) patch(id, {customOfficial:'', customOfficialKind:''});
+  else patch(id, {customOfficial:url, customOfficialKind:'custom'});
+}
+function csvEscape(s) {
+  s = String(s ?? "");
+  return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+function parseCSV(text) {
+  const rows = []; let cur = '', row = [], quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], n = text[i+1];
+    if (quoted) {
+      if (c === '"' && n === '"') { cur += '"'; i++; }
+      else if (c === '"') quoted = false;
+      else cur += c;
+    } else {
+      if (c === '"') quoted = true;
+      else if (c === ',') { row.push(cur); cur = ''; }
+      else if (c === '\n') { row.push(cur); rows.push(row); row = []; cur = ''; }
+      else if (c !== '\r') cur += c;
+    }
+  }
+  row.push(cur); rows.push(row);
+  return rows.filter(r => r.some(x => String(x).trim()));
+}
+function setupControls() {
+  const csel = document.getElementById('companySelect');
+  csel.innerHTML = '<option>全部</option>' + COMPANY_ORDER.map(c => `<option>${esc(c)}</option>`).join('');
+  csel.onchange = e => { state.company = e.target.value; render(); };
+  const rsel = document.getElementById('regionSelect');
+  rsel.innerHTML = '<option>全部地區</option>' + REGION_ORDER.map(r => `<option>${esc(r)}</option>`).join('');
+  rsel.onchange = e => { state.region = e.target.value; render(); };
+  document.getElementById('stateSelect').onchange = e => { state.status = e.target.value; render(); };
+  document.getElementById('q').oninput = e => { state.q = e.target.value.trim().toLowerCase(); render(); };
+}
+function filtered() {
+  return DATA.filter(it => {
+    const s = itemState(it.id);
+    const off = getOfficial(it);
+    const n = nameParts(it);
+    const hay = (it.company + ' ' + it.region + ' ' + it.name + ' ' + n.zhName + ' ' + it.type + ' ' + (it.status_note || '') + ' ' + (Array.isArray(it.status_tags) ? it.status_tags.join(' ') : '') + ' ' + (it.official || '') + ' ' + off.url).toLowerCase();
+    if (state.company !== '全部' && it.company !== state.company) return false;
+    if (state.region !== '全部地區' && it.region !== state.region) return false;
+    if (state.q && !hay.includes(state.q)) return false;
+    if (state.status === 'done' && !s.done) return false;
+    if (state.status === 'notdone' && s.done) return false;
+    return true;
+  });
+}
+function summary() {
+  let done=0;
+  DATA.forEach(it => { const s=itemState(it.id); if(s.done) done++; });
+  const pct = DATA.length ? Math.round(done / DATA.length * 100) : 0;
+  document.getElementById('pct').textContent = pct + '%';
+  document.getElementById('fill').style.width = pct + '%';
+  document.getElementById('doneText').textContent = `完成 ${done} / ${DATA.length}`;
+  document.getElementById('doneN').textContent = done;
+}
+function card(it) {
+  const s = itemState(it.id);
+  const off = getOfficial(it);
+  const n = nameParts(it);
+  const official = off.url
+    ? `<a class="officialBtn ${off.kind === 'company' ? 'company' : ''} ${off.kind === 'custom' ? 'custom' : ''}" href="${esc(off.url)}" target="_blank" rel="noreferrer">${esc(off.label)}</a>`
+    : '<span class="officialMissing">官網待補</span>';
+  return `<article class="card ${s.done ? 'done' : ''}" data-id="${esc(it.id)}">
+    <button class="check" title="勾選完成" data-act="toggle">${s.done ? '✓' : ''}</button>
+    <div>
+      <button class="name nameBtn" data-act="editZhName" type="button" title="點擊輸入中譯名">${nameHtmlForCard(it)}</button>${n.zhName ? "" : '<div class="nameHint">點名稱可補中譯名</div>'}
+      <div class="meta"><span class="tag companyTag">${esc(it.company)}</span><span class="tag">${esc(it.region)}</span><span class="tag">${esc(it.type)}</span></div>
+      ${itemStatusHtml(it)}
+      <div class="fields">
+        <input type="date" data-act="date" value="${esc(s.date || '')}">
+        <input class="note" placeholder="備註：班次、票價、同行人…" data-act="memo" value="${esc(s.memo || '')}">
+      </div>
+      <div class="linkRow">
+        ${official}
+        <button class="editOfficialBtn" data-act="editOfficial" type="button">編輯官網</button>
+        <a class="sourceLink" href="${esc(it.source)}" target="_blank" rel="noreferrer">整理來源</a>
+      </div>
+    </div>
+  </article>`;
+}
+function render() {
+  summary();
+  const rows = filtered();
+  const by = new Map();
+  rows.forEach(it => { if(!by.has(it.company)) by.set(it.company, []); by.get(it.company).push(it); });
+  let out = '';
+  for (const c of COMPANY_ORDER) {
+    const arr = by.get(c);
+    if (!arr || !arr.length) continue;
+    const totalIn = DATA.filter(x => x.company === c).length;
+    const doneIn = DATA.filter(x => x.company === c && itemState(x.id).done).length;
+    out += `<section><div class="groupTitle"><h2>${esc(c)}</h2><small>${doneIn} / ${totalIn}</small></div><div class="grid">${arr.map(card).join('')}</div></section>`;
+  }
+  document.getElementById('list').innerHTML = out;
+  document.getElementById('empty').style.display = rows.length ? 'none' : 'block';
+}
+document.addEventListener('click', e => {
+  const cardEl = e.target.closest('.card');
+  if (!cardEl) return;
+  const actionEl = e.target.closest('[data-act]');
+  if (!actionEl || !cardEl.contains(actionEl)) return;
+  const id = cardEl.dataset.id;
+  const act = actionEl.dataset.act;
+  if (act === 'editOfficial') { editOfficial(id); return; }
+  if (act === 'editZhName') { openZhModal(id); return; }
+  if (act === 'toggle') { const s=itemState(id); patch(id, {done:!s.done}); return; }
+});
+document.addEventListener('change', e => {
+  const cardEl = e.target.closest('.card'); if(!cardEl) return;
+  const id = cardEl.dataset.id, act = e.target.dataset.act;
+  if (act === 'date') patch(id, {date:e.target.value});
+});
+document.addEventListener('input', e => {
+  const cardEl = e.target.closest('.card'); if(!cardEl) return;
+  if (e.target.dataset.act === 'memo') {
+    const id = cardEl.dataset.id;
+    state.saved[id] = {...itemState(id), memo: e.target.value};
+    save(); summary();
+  }
+});
+function downloadText(filename, text, type) {
+  const blob = new Blob([text], {type});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename; a.click(); URL.revokeObjectURL(a.href);
+}
+function pad2(n) { return String(n).padStart(2, '0'); }
+function fileTimestamp(d = new Date()) {
+  return `${d.getFullYear()}${pad2(d.getMonth() + 1)}${pad2(d.getDate())}_${pad2(d.getHours())}${pad2(d.getMinutes())}`;
+}
+function exportFilename(kind, ext) {
+  return `日本觀光列車_旅印帖_${kind}_${fileTimestamp()}_v51.${ext}`;
+}
+
+function buildCompletedPrintHtml() {
+  const doneItems = DATA.filter(it => itemState(it.id).done);
+  const total = DATA.length;
+  const today = new Date().toLocaleDateString('zh-TW');
+  let html = `<div class="printTitle">日本觀光列車｜已完成清單</div>`;
+  html += `<div class="printMeta">列印日期：${esc(today)}｜已完成 ${doneItems.length} / ${total}</div>`;
+  for (const company of COMPANY_ORDER) {
+    const arr = doneItems.filter(it => it.company === company);
+    if (!arr.length) continue;
+    html += `<div class="printCompany">${esc(company)}（${arr.length}）</div>`;
+    html += `<table class="printTable"><thead><tr><th style="width:17%">編號</th><th style="width:28%">列車</th><th style="width:11%">地區</th><th style="width:13%">日期</th><th>備註 / 官網</th></tr></thead><tbody>`;
+    html += arr.map(it => {
+      const s = itemState(it.id);
+      const off = getOfficial(it);
+      const memo = s.memo ? `<div>${esc(s.memo)}</div>` : '';
+      const url = off.url ? `<div class="printSmall">${esc(off.url)}</div>` : '';
+      const n = nameParts(it);
+      return `<tr><td>${esc(it.id)}</td><td>${nameHtmlForPrint(it)}</td><td>${esc(it.region)}</td><td>${esc(s.date || '')}</td><td>${memo}${url}</td></tr>`;
+    }).join('');
+    html += `</tbody></table>`;
+  }
+  return {count: doneItems.length, html};
+}
+function printCompleted() {
+  const built = buildCompletedPrintHtml();
+  if (!built.count) { alert('目前沒有已完成的列車可以列印。'); return; }
+  const panel = document.getElementById('printPanel');
+  panel.innerHTML = built.html;
+  document.body.classList.add('print-completed');
+  const cleanup = () => {
+    document.body.classList.remove('print-completed');
+    window.removeEventListener('afterprint', cleanup);
+  };
+  window.addEventListener('afterprint', cleanup);
+  window.print();
+}
+function cleanSaved(raw) {
+  const out = {};
+  const valid = new Set(DATA.map(x => x.id));
+  Object.entries(raw || {}).forEach(([id, s]) => {
+    if (!valid.has(id) || !s || typeof s !== 'object') return;
+    out[id] = {
+      done: !!s.done,
+      date: String(s.date || ''),
+      memo: String(s.memo || ''),
+      zhName: String(s.zhName || s.chineseName || s.zh || s.translation || ''),
+      customOfficial: normalizeUrl(s.customOfficial || s.official || ''),
+      customOfficialKind: s.customOfficial || s.official ? 'custom' : ''
+    };
+  });
+  return out;
+}
+
+function openUpdateModal() {
+  const modal = document.getElementById('updateModal');
+  modal.classList.add('show');
+  modal.setAttribute('aria-hidden', 'false');
+}
+function closeUpdateModal() {
+  const modal = document.getElementById('updateModal');
+  modal.classList.remove('show');
+  modal.setAttribute('aria-hidden', 'true');
+}
+document.getElementById('versionBtn').onclick = openUpdateModal;
+document.getElementById('latestUpdateBtn').onclick = openUpdateModal;
+document.getElementById('updateCloseBtn').onclick = closeUpdateModal;
+document.getElementById('updateOkBtn').onclick = closeUpdateModal;
+document.getElementById('updateModal').addEventListener('click', e => { if (e.target.id === 'updateModal') closeUpdateModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeUpdateModal(); closeZhModal(); } });
+document.getElementById('zhSaveBtn').onclick = saveZhModal;
+document.getElementById('zhCancelBtn').onclick = closeZhModal;
+document.getElementById('zhClearBtn').onclick = clearZhModal;
+document.getElementById('zhModal').addEventListener('click', e => { if (e.target.id === 'zhModal') closeZhModal(); });
+document.getElementById('zhModalInput').addEventListener('keydown', e => { if (e.key === 'Enter') e.preventDefault(); if (e.key === 'Escape') closeZhModal(); });
+document.getElementById('printDoneBtn').onclick = printCompleted;
+document.getElementById('exportJsonBtn').onclick = () => {
+  const filename = exportFilename('個人備份', 'json');
+  const backup = {
+    app: '日本觀光列車｜旅印帖',
+    format: 'json-backup',
+    version: 29,
+    list_version: 'tabijirushi_v51_pwa',
+    exported_at: new Date().toISOString(),
+    export_filename: filename,
+    total: DATA.length,
+    saved: cleanSaved(state.saved),
+    items: DATA.map(it => ({...it, state: itemState(it.id)}))
+  };
+  downloadText(filename, JSON.stringify(backup, null, 2), 'application/json;charset=utf-8');
+};
+document.getElementById('exportCsvBtn').onclick = () => {
+  const header = ['id','公司','地區','名稱','中譯名','類型','重要標籤','狀態備註','原始官網連結','目前官網連結','官網類型','自訂官網','完成','日期','備註'];
+  const rows = DATA.map(it => {
+    const s = itemState(it.id);
+    const off = getOfficial(it);
+    const n = nameParts(it);
+    return [it.id,it.company,it.region,it.name,n.zhName||'',it.type,Array.isArray(it.status_tags)?it.status_tags.join('、'):'',it.status_note||'',it.official||'',off.url||'',off.kind||'',s.customOfficial?'1':'',s.done?'1':'',s.date||'',s.memo||''];
+  });
+  const csv = [header, ...rows].map(r => r.map(csvEscape).join(',')).join('\n');
+  downloadText(exportFilename('表格', 'csv'), '\ufeff' + csv, 'text/csv;charset=utf-8');
+};
+document.getElementById('importJsonBtn').onclick = () => document.getElementById('file').click();
+document.getElementById('file').onchange = async e => {
+  const f = e.target.files[0]; if(!f) return;
+  try {
+    const backup = JSON.parse(await f.text());
+    let imported = {};
+    if (backup.saved && typeof backup.saved === 'object') imported = backup.saved;
+    else if (Array.isArray(backup.items)) backup.items.forEach(x => { if (x && x.id && x.state) imported[x.id] = x.state; });
+    else if (backup && typeof backup === 'object') imported = backup;
+    const cleaned = cleanSaved(imported);
+    const n = Object.keys(cleaned).length;
+    if (!n) { alert('JSON 裡沒有可匯入的 checklist 狀態。'); return; }
+    state.saved = {...state.saved, ...cleaned};
+    save(); render();
+    alert(`已匯入 ${n} 筆狀態。`);
+  } catch(err) {
+    alert('JSON 讀取失敗，請確認你選的是這個 checklist 匯出的 .json 備份檔。');
+  } finally {
+    e.target.value='';
+  }
+};
+document.getElementById('copyBtn').onclick = async () => {
+  const lines = DATA.filter(it => !itemState(it.id).done).map(it => `□ [${it.company}｜${it.region}] ${displayNamePlain(it)}`);
+  try { await navigator.clipboard.writeText(lines.join('\n')); alert('已複製未完成清單'); } catch(e) { alert(lines.join('\n')); }
+};
+document.getElementById('clearBtn').onclick = () => {
+  if(confirm('確定要清空完成勾選、日期與備註嗎？你自己補的官網與中譯名會保留。')) {
+    const kept = {};
+    Object.entries(state.saved || {}).forEach(([id, s]) => {
+      if (!s) return;
+      const entry = {};
+      if (s.customOfficial) { entry.customOfficial = normalizeUrl(s.customOfficial); entry.customOfficialKind = 'custom'; }
+      if (s.zhName) entry.zhName = String(s.zhName || '');
+      if (Object.keys(entry).length) kept[id] = entry;
+    });
+    state.saved = kept; save(); render();
+  }
+};
+setupControls();
+render();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js').catch(err => console.warn('Service worker 註冊失敗：', err));
+  });
+}
+</script>
+
+</body>
+</html>

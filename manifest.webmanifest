@@ -1,0 +1,24 @@
+{
+  "name": "日本觀光列車｜旅印帖",
+  "short_name": "旅印帖",
+  "description": "日本觀光列車旅印帖 checklist。",
+  "lang": "zh-Hant-TW",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EEF5FB",
+  "theme_color": "#EEF5FB",
+  "icons": [
+    {
+      "src": "./tourist-train-rabbit-icon-v51-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./tourist-train-rabbit-icon-v51-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
