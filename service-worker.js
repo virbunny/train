@@ -1,12 +1,12 @@
-// 2026-06-01; 日本觀光列車｜旅印帖 v55 PWA
-const CACHE_NAME = 'jp-tourist-train-tabijirushi-v55-hokkaido-norokko-cache';
+// 2026-06-10; 日本觀光列車｜旅印帖 v57 PWA
+const CACHE_NAME = 'jp-tourist-train-tabijirushi-v57-hokkaido-norokko-last-year-cache';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './tourist-train-rabbit-icon-v55-180.png',
-  './tourist-train-rabbit-icon-v55-192.png',
-  './tourist-train-rabbit-icon-v55-512.png'
+  './tourist-train-rabbit-icon-v57-180.png',
+  './tourist-train-rabbit-icon-v57-192.png',
+  './tourist-train-rabbit-icon-v57-512.png'
 ];
 
 self.addEventListener('install', event => {
