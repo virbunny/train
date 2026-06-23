@@ -1,12 +1,12 @@
-// 2026-06-15; 日本觀光列車｜旅印帖 v58 PWA
-const CACHE_NAME = 'jp-tourist-train-tabijirushi-v58-20260615-weekly-updates-cache';
+// 2026-06-23; 日本觀光列車｜旅印帖 v59 PWA
+const CACHE_NAME = 'jp-tourist-train-tabijirushi-v59-targeted-fixes-cache';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './tourist-train-rabbit-icon-v58-180.png',
-  './tourist-train-rabbit-icon-v58-192.png',
-  './tourist-train-rabbit-icon-v58-512.png'
+  './tourist-train-rabbit-icon-v59-180.png',
+  './tourist-train-rabbit-icon-v59-192.png',
+  './tourist-train-rabbit-icon-v59-512.png'
 ];
 
 self.addEventListener('install', event => {
