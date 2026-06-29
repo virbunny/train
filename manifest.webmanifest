@@ -11,12 +11,12 @@
   "theme_color": "#EEF5FB",
   "icons": [
     {
-      "src": "./tourist-train-rabbit-icon-v59-192.png",
+      "src": "./tourist-train-rabbit-icon-v60-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./tourist-train-rabbit-icon-v59-512.png",
+      "src": "./tourist-train-rabbit-icon-v60-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
