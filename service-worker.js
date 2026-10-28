@@ -1,12 +1,12 @@
-// 2026-10-19; 日本觀光列車｜旅印帖 v74 PWA
-const CACHE_NAME = 'jp-tourist-train-tabijirushi-v74-20261019-weekly-updates-cache';
+// 2026-10-28; 日本觀光列車｜旅印帖 v75 PWA
+const CACHE_NAME = 'jp-tourist-train-tabijirushi-v75-20261028-partial-updates-cache';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './tourist-train-rabbit-icon-v74-180.png',
-  './tourist-train-rabbit-icon-v74-192.png',
-  './tourist-train-rabbit-icon-v74-512.png'
+  './tourist-train-rabbit-icon-v75-180.png',
+  './tourist-train-rabbit-icon-v75-192.png',
+  './tourist-train-rabbit-icon-v75-512.png'
 ];
 
 self.addEventListener('install', event => {
